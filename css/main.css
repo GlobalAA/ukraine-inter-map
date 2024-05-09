@@ -1,0 +1,83 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+#Ukraine {
+  height: 90vh;
+  margin-top: 1em;
+  margin-top: 1em;
+}
+#Ukraine * {
+  transition: all 0.3s ease;
+}
+
+#Ukraine path:hover:not(.capital) {
+  fill: #97c2f8 !important;
+  cursor: pointer;
+}
+
+.capital:hover {
+  fill: #052944 !important;
+}
+
+.cityName {
+  pointer-events: none;
+  font-family: "Roboto", sans-serif;
+  fill: #001f3f;
+}
+
+body {
+  height: 90vh;
+  background-color: #1d1e20;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tooltip {
+  display: none;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: rgb(104, 112, 104);
+  color: white;
+  border-radius: 5%;
+  pointer-events: none;
+  padding: 5px;
+}
+
+.card__bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: 0.3s all;
+  pointer-events: none;
+  z-index: 10;
+}
+.card__bg.active {
+  pointer-events: all;
+  opacity: 1;
+  transition: 0.3s all;
+}
+.card__bg .card {
+  display: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #97c2f8;
+  border-radius: 20px;
+  padding: 25px;
+  max-width: 60vh;
+  max-height: 90vh;
+  min-width: 40vh;
+  min-height: 40vh;
+  font-family: "Roboto";
+}
+.card__bg .card img {
+  max-width: 100%;
+}

@@ -1,0 +1,22 @@
+* {
+  transition: all 0.3s ease;
+}
+
+#Ukraine {
+  height: 90vh;
+}
+
+#Ukraine path:hover:not(.capital) {
+  fill: #97c2f8 !important;
+  cursor: pointer;
+}
+
+.capital:hover {
+  fill: #052944 !important;
+}
+
+.cityName {
+  pointer-events: none;
+  font-family: "Roboto", sans-serif;
+  fill: #001f3f;
+}
